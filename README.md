@@ -160,8 +160,17 @@ NOTA: Use el nombre DNS (y no la dirección IP) del Elastic Load Balancer en el 
 
 NOTA: Una vez que realice los cambios necesarios, el cambio puede demorar hasta 48 horas en propagarse a otros servidores DNS.
 
-Paso 4: Modifique La Configuración Del Servidor Web En La Instancia De La Aplicación
+
+Ahora que tenemos nuestro balanceador de carga, redireccinamos con las reglas de entrada las peticiones a nuestro balanceador, y este dividira las peticiones en el numero de instancias que tengamos.
+
+Esto lo haremos seleccionando el grupo de seguridad al momento de agregar las reglas de entrada en nuestras instancias
 
 
+![image](https://user-images.githubusercontent.com/36380066/126827739-afcd5e82-4c31-4d4d-9f2c-175181a3e85b.png)
 
 
+Paso 4: Modifique La Configuración Del Servidor Web En La Instancia De La Aplicación.
+
+Paso 5: Termiando
+
+![image](https://user-images.githubusercontent.com/36380066/126828485-b0551509-7128-4f3f-84df-bdd5bdfd999d.png)
